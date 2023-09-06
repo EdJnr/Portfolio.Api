@@ -12,6 +12,10 @@ namespace Portfolio.Application
 
             services.AddScoped<IPersonalDataServices, PersonalDataServices>();
 
+            services.AddScoped<IBlogCategoryServices, BlogCategoryServices>();
+
+            services.AddScoped<IBlogServices, BlogServices>();
+
             return services;
         }
     }
